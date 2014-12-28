@@ -128,6 +128,14 @@ nav li a {
   }
 }
 
+.anchor-nav {
+  li {
+    display: inline-block;
+    list-style: none;
+  }
+
+}
+
 /*-----------------------------------------
 Animations
 -----------------------------------------*/
@@ -335,13 +343,19 @@ Home
 }
 
 #scroll {
-  font-size: 1.5em;
-  color: rgba(106, 106, 106, 1);  
-  /*position: absolute;*/
-  /*bottom: 50px;*/
-  /*left: 50%;*/
   position: relative;
+  margin: 0 auto;
   margin-top: 20%;
+  background-image: url(../img/scroll-icon.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+  display: block;
+  &:hover {
+  	cursor: pointer;
+  }
 }
 
 /*-----------------------------------------
@@ -394,8 +408,6 @@ Portfolio
 
 .overlay {
   position: relative;
-  /*width: 250px;*/
-  /*height: 250px;*/
   margin: 0 auto;
   display: inline-block;
   font-size: 19pt;
@@ -412,21 +424,33 @@ Portfolio
   text-align: center;
   font-size: 2em;
   position: absolute;
-  padding-top: 100px;
+  padding-top: 42%;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url(../img/search.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
 }
 
 .overlay:hover:after {
-  opacity: 1;
+  background-color: rgba(122, 173, 173, 0.7);
+}
+
+
+/*-----------------------------------------
+Portfolio Pages
+-----------------------------------------*/
+.portfolio-header {
+  width: 100%;
+  height: 300px;
+  background-color: rgba(122, 173, 173, 1);
+}
+
+.portfolio-description {
+  padding: 20px;
 }
 
 /*-----------------------------------------
@@ -477,7 +501,7 @@ About
 Skills
 -----------------------------------------*/
 #skills {
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -496,7 +520,6 @@ Skills
   font-size: 16pt;
   text-align: left;
   padding-left: 15px;
-  margin-bottom: -1%;
 }
 
 #resume {  

@@ -4,7 +4,7 @@ title: Ellie Hoshizaki | Web Developer & Designer
 
 <!-- new content -->
   <div class="home">
-    <div id="blackBackdrop">
+    <div id="blackBackdrop" onload="fadeIn(this)">
       <div class="bounceIn" id="introText">  
         <div id="introName">
           <img src="img/titletext.svg"/>
@@ -12,9 +12,7 @@ title: Ellie Hoshizaki | Web Developer & Designer
         <span id="introDescription">
           Front End Developer | UX/UI Designer
         </span>
-        <p id="scroll">
-          scroll
-        </p>
+        <a href="#services"><span id="scroll"></span></a>        
       </div>
       <div id="landing-content">
       </div>
@@ -31,7 +29,7 @@ title: Ellie Hoshizaki | Web Developer & Designer
     <nav id="nav">
       <!-- <a href="#"><img src="img/EH_logo.svg" id="logo"/></a> -->
       <ul>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#services">What I Do</a></li>
         <li><a href="#works">Works</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -67,49 +65,49 @@ title: Ellie Hoshizaki | Web Developer & Designer
 
   <div id="works">
 
-      <a href="img/peek1.jpg" data-title-id="Peek-Title">
+      <a href='/portfolio/peek'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Peek">
           <img src="img/peek1.jpg" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption" href="img/StyleLust1.jpg" data-title-id="StyleLust-Title">
+      <a href='/portfolio/stylelust'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="StyleLust">
-          <img src="img/StyleLust1.jpg" class=" large-quarters medium-thirds small-half mobile-whole"/>
+          <img src="img/StyleLust1.jpg" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption pillstagram" href="img/Pillstagram1.png" data-title-id="Pillstagram-Title">
+      <a href='/portfolio/pillstagram'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Pillstagram">
           <img src="img/Pillstagram1.png" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
       
-      <a class="caption" href="img/muselab.png" data-title-id="MuseLab-Title">
+      <a href='portfolio/muselab'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="MuseLab">
           <img src="img/muselab.png" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption" href="img/inBetween.png" data-title-id="inBetween-Title">
+      <a href='portfolio/inbetween'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="inBetween">
           <img src="img/inBetween.png" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption" href="img/GoldGhostSquare.jpg" data-title-id="GoldGhost-Title">
+      <a href='portfolio/goldghoststudio'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="Gold Ghost">
           <img src="img/GoldGhostSquare.jpg" class="large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption" href="img/GeoSpec.jpg" data-title-id="GeoSpec-Title">
+      <a href='portfolio/geospec'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="GeoSpec">
           <img src="img/GeoSpec.jpg" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
       </a>
 
-      <a class="caption" href="img/houseicon.gif" data-title-id="House-Title">
+      <a href='portfolio/fractalhouse'>
         <div class="overlay large-quarters medium-thirds small-half mobile-whole" data-content="House">
           <img src="img/houseicon.gif" class=" large-quarters medium-thirds small-half mobile-whole"/>
         </div>
@@ -119,58 +117,40 @@ title: Ellie Hoshizaki | Web Developer & Designer
   <div id="skills">
     <span class="title">my skillset</span>
     <div id="skillSection">
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          JavaScript
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        JavaScript
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Ruby on Rails
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Ruby on Rails
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Node
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Node
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          PhotoShop
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        PhotoShop
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Illustrator
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Illustrator
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          InDesign
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        InDesign
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Axure
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Axure
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Rhinoceros 3D
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Rhinoceros 3D
       </div>
 
-      <div class="mobile-whole small-thirds medium-thirds large-thirds">
-        <p class="skillTitle">
-          Omnigraffle
-        </p>
+      <div class="skillTitle mobile-whole small-thirds medium-thirds large-thirds">
+        Omnigraffle
       </div>
     </div>
   </div>
@@ -204,19 +184,19 @@ title: Ellie Hoshizaki | Web Developer & Designer
   <div id="contact">
     <div id="contactContainer">
 
-      <div class="mobile-whole small-whole medium-thirds large-thirds">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         Ellie Hoshizaki
         <br>
         Los Angeles, CA
       </div>
-      <div class="mobile-whole small-whole medium-thirds large-thirds">
+      <div class="mobile-whole small-thirds medium-thirds large-thirds">
         Let's Talk
         <br>
         elena.hoshizaki@gmail.com
         <br>
         310.383.0801
       </div>
-      <div class="social-container mobile-whole small-whole medium-thirds large-thirds">
+      <div class="social-container mobile-whole small-thirds medium-thirds large-thirds">
         Connect
         <br>
         <a href="http://www.linkedin.com/in/elliehoshizaki" target="_blank">

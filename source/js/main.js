@@ -1,7 +1,9 @@
-// ------------------------------------------
-// jQuery - on page load
-// ------------------------------------------
 $(document).ready(function() {
+
+  // fade in img on load (not working yet)
+	// $(function(obj){
+ //    $(obj).fadeIn(1000);
+ //  });
 
   // Affix nav
   $(window).scroll(function(){
@@ -81,6 +83,14 @@ $(document).ready(function() {
     }, 300, function() {
       window.location.hash = hash;
     });
+  });
+
+  //Animate scroll on click of scroll icon in homepage (refactor to move into function above)
+  $("#scroll").on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $('#services').offset().top
+    }, 'slow');
   });
 
 });
