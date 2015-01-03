@@ -1,12 +1,92 @@
 {
-  "piece_name": [
-    "peek",
-    "stylelust",
-    "pillstagram",
-    "muselab",
-    "inbetween",
-    "goldghoststudio",
-    "geospec",
-    "fractalhouse"
+  "pieces": [
+    {
+      "piece_name": "peek",
+      "title" : "Peek",
+      "category" : "Web App",
+      "description": "Speed read NPR stories through Peek.",
+      "image" : {
+        "url" : "peek1.jpg",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>MongoDB</li><li>Express.js</li><li>Angular.js</li><li>Node.js</li><li>JavaScript</li><li>jQuery</li>"
+    },
+    {
+      "piece_name": "stylelust",
+      "title" : "StyleLust",
+      "category" : "eCommerce Web App",
+      "description": "Discover new fashion styles and trends from the hottest brands. Buy your favorite items from hundreds of brands in one location.",
+      "image" : {
+        "url" : "StyleLust1.jpg",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Ruby on Rails</li><li>PostgreSQL</li><li>JavaScript</li><li>jQuery</li><li>Zurb Foundation</li>"
+    },
+    {
+      "piece_name": "pillstagram",
+      "title" : "Pillstagram",
+      "category" : "UX Deck for Mobile Medical App",
+      "description": "Snap a photo of your medications with your phone. Automatically identify and organize your medications in seconds.",
+      "image" : {
+        "url" : "Pillstagram1.png",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Axure</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe InDesign</li>"
+    },
+    {
+      "piece_name": "muselab",
+      "title" : "MuseLab",
+      "category" : "Web App",
+      "description": "Where user needs inspire creators.",
+      "image" : {
+        "url" : "muselab.png",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>MongoDB</li><li>Ruby on Rails</li><li>D3.js</li><li>JavaScript</li>"
+    },
+    {
+      "piece_name": "inbetween",
+      "title" : "inBetween",
+      "category" : "Mobile App",
+      "description": "proj5",
+      "image" : {
+        "url" : "inBetween.png",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Ruby on Rails</li><li>PostgreSQL</li><li>JavaScript</li>"
+    },
+    {
+      "piece_name": "goldghoststudio",
+      "title" : "Gold Ghost Studio",
+      "category" : "UX Deck for eCommerce App",
+      "description": "Hand Silkscreened Prints from LA Designers.",
+      "image" : {
+        "url" : "GoldGhost.jpg",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Balsamiq</li><li>Omnigraffle</li><li>Adobe InDesign</li><li>Adobe Photoshop</li>"
+    },
+    {
+      "piece_name": "geospec",
+      "title" : "Geometric Speciation",
+      "category" : "3D Data Visualization",
+      "description": "An exploration of translations between existing drawings and their re-constructed digital and physical equivalents.",
+      "image" : {
+        "url" : "GeoSpec.jpg",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
+    },
+    {
+      "piece_name": "fractalhouse",
+      "title" : "Fractal House",
+      "category" : "eCommerce Web App",
+      "description": "proj8",
+      "image" : {
+        "url" : "houseicon.gif",
+        "alt" : "lorem ipsum"
+      },
+      "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
+    }
   ]
 }

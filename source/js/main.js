@@ -14,6 +14,9 @@ $(document).ready(function() {
         position: 'fixed',
         top: '0'
       });
+      $('#nav-container').animate({
+        opacity: '1'
+      }, 5000);
     }
     if($(window).scrollTop() < scrollTop){
       $('#nav-container').removeAttr('style');  

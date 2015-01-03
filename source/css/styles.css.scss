@@ -1,4 +1,10 @@
 /*-----------------------------------------
+Variables
+-----------------------------------------*/
+$eh-gray: rgba(106, 106, 106, 1);
+$eh-blue: rgba(162, 213, 213, 1);
+
+/*-----------------------------------------
 Body
 -----------------------------------------*/
 * {
@@ -7,7 +13,7 @@ Body
 
 html, body {
   text-align: center;
-  color: rgba(106, 106, 106, 1);
+  color: $eh-gray;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   overflow-x: hidden;
@@ -15,7 +21,7 @@ html, body {
 
 a {
   text-decoration: none;
-  color: rgba(162, 213, 213, 1);
+  color: $eh-gray;
 }
 
 a:hover {
@@ -23,7 +29,7 @@ a:hover {
 }
 
 .title {
-  color: rgba(106, 106, 106, 1);
+  color: $eh-gray;
   font-size: 2em;
   display: block;
   font-weight: 300;
@@ -61,12 +67,13 @@ Nav
 }
 
 #nav-container {
+  opacity: 0;
   visibility: hidden;
   z-index: 1;
   text-align: left;
   width: 100%;
   position: absolute;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,1);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -345,12 +352,12 @@ Home
 #scroll {
   position: relative;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 18%;
   background-image: url(../img/scroll-icon.svg);
   background-repeat: no-repeat;
   text-align: center;
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   z-index: 10;
   display: block;
   &:hover {
@@ -419,8 +426,7 @@ Portfolio
 }
 
 .overlay:after {
-  content: attr(data-content);
-  color: #fff;
+  color: white;
   text-align: center;
   font-size: 2em;
   position: absolute;
@@ -433,10 +439,12 @@ Portfolio
   opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  content: '';
 }
 
 .overlay:hover:after {
-  background-color: rgba(122, 173, 173, 0.7);
+  background-color: rgba(82, 133, 133, 0.7);
+  content: attr(data-content);
 }
 
 
@@ -446,11 +454,57 @@ Portfolio Pages
 .portfolio-header {
   width: 100%;
   height: 300px;
-  background-color: rgba(122, 173, 173, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  &.peek {
+    background-image: url(../img/peek1.jpg);
+  }
+  &.stylelust {
+    background-image: url(../img/StyleLust1.jpg);
+  }
+  &.pillstagram {
+    background-image: url(../img/pillstagram2.png);
+  }
+  &.muselab {
+    background-image: url(../img/muselab.png);
+  }
+  &.inbetween {
+    background-image: url(../img/inBetween.png);
+  }
+  &.goldghoststudio {
+    background-image: url(../img/GoldGhost.jpg);
+  }
+  &.geospec {
+    background-image: url(../img/GeoSpec.jpg);
+  }
+  &.fractalhouse {
+    background-image: url(../img/houseicon.gif);
+  }
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: '';
+  }
 }
 
 .portfolio-description {
   padding: 20px;
+}
+
+.tools {
+  text-align: left;
+  margin-left: 50px;
+}
+
+.portfolio-full-image {
+  width: 80%;
+  height: auto;
 }
 
 /*-----------------------------------------
@@ -517,9 +571,15 @@ Skills
 }
 
 .skillTitle {
-  font-size: 16pt;
   text-align: left;
   padding-left: 15px;
+  h6 {
+    margin-bottom: 0px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
 }
 
 #resume {  
