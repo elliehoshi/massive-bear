@@ -16,7 +16,7 @@ $(document).ready(function() {
       });
       $('#nav-container').animate({
         opacity: '1'
-      }, 5000);
+      }, 500);
     }
     if($(window).scrollTop() < scrollTop){
       $('#nav-container').removeAttr('style');  

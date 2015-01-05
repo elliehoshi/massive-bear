@@ -3,6 +3,7 @@ Variables
 -----------------------------------------*/
 $eh-gray: rgba(106, 106, 106, 1);
 $eh-blue: rgba(162, 213, 213, 1);
+$eh-cream: rgba(245,245,245,1);
 
 /*-----------------------------------------
 Body
@@ -25,7 +26,7 @@ a {
 }
 
 a:hover {
- color: rgba(202, 253, 253, 1); 
+ color: darken($eh-blue, 20%); 
 }
 
 .title {
@@ -36,7 +37,7 @@ a:hover {
 }
 
 .btn-default {
-  background-color: rgba(122, 173, 173, 1);
+  background-color: $eh-blue;
   color: white;
   border: none;
   width: 150px;
@@ -49,11 +50,11 @@ a:hover {
 }
 
 .btn-default > a {
-  color: white;
+  color: $eh-cream;
 }
 
 .btn-default:hover {
-  background-color: rgba(162, 213, 213, 1);
+  background-color: darken($eh-blue, 20%);
   cursor: pointer;
 }
 
@@ -74,7 +75,7 @@ Nav
   text-align: left;
   width: 100%;
   position: absolute;
-  background-color: rgba(255,255,255,1);
+  background-color:  $eh-cream;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -92,7 +93,11 @@ Nav
 a.menu-link {
   float: left;
   display: block;
-  padding: 1em;
+  padding: 10px;
+  img {
+    height: 30px;
+    width: 30px;
+  }
 }
 nav {
   clear: both;
@@ -112,7 +117,6 @@ nav.active {
 nav ul {
   margin: 0;
   padding: 0;
-  border-top: 1px solid #808080;
 }
 nav li a {
   display: block;
@@ -271,7 +275,12 @@ Home
 }
 
 #blackBackdrop {
-  background-image: url(../img/subtle_carbon.png);
+  // background-image: url(../img/subtle_carbon.png);
+  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -287,9 +296,9 @@ Home
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  -webkit-animation: pulse 5s ease-in infinite;
-  -moz-animation: pulse 5s ease-in infinite;
-  animation: pulse 5s ease-in infinite;
+  -webkit-animation: pulse 7s ease-in infinite;
+  -moz-animation: pulse 7s ease-in infinite;
+  animation: pulse 7s ease-in infinite;
 }
 
 #movement2 {
@@ -299,24 +308,32 @@ Home
   background-repeat: no-repeat;
   height: 900px;
   width: 800px;
-  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  -webkit-animation: pulse 5s ease-out infinite;
-  -moz-animation: pulse 5s ease-out infinite;
-  animation: pulse 5s ease-out infinite;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: pulse 5s ease infinite;
+  -moz-animation: pulse 5s ease infinite;
+  animation: pulse 5s ease infinite;
   pointer-events: none;
 }
 
 #movement3 {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../img/fractal3_fill.svg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 900px;
   width: 1300px;
-  -webkit-animation: pulse 5s ease-out infinite;
-  -moz-animation: pulse 5s ease-out infinite;
-  animation: pulse 5s ease-out infinite;
+  -webkit-animation: pulse 5s ease-in infinite;
+  -moz-animation: pulse 5s ease-in infinite;
+  animation: pulse 5s ease-in infinite;
   pointer-events: none;
 }
 
@@ -339,7 +356,7 @@ Home
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 1.5em;
-  color: $eh-gray;
+  color: white;
 }
 
 #introName img {
@@ -370,7 +387,8 @@ Services
   width: 100vw;
   height: 500px;
   padding-top: 50px;
-  background-color: rgba(245,245,245,1);
+  padding-bottom: 50px;
+  background-color: $eh-cream;
   display: table;
 }
 
@@ -409,7 +427,7 @@ Portfolio
 }
 
 #portfolioContainer a {
-  color: rgba(245,245,245,1);
+  color: $eh-cream;
   text-decoration: none;
   border: none;
 }
@@ -427,7 +445,7 @@ Portfolio
 }
 
 .overlay:after {
-  color: white;
+  color: $eh-gray;
   text-align: center;
   font-size: 2em;
   position: absolute;
@@ -436,16 +454,20 @@ Portfolio
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(40, 49, 72, 0.9);
   opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  content: '';
+  // content: '';
+  content: attr(data-content);
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    font-size: 1em;
+  }
 }
 
 .overlay:hover:after {
   background-color: rgba(82, 133, 133, 0.7);
-  content: attr(data-content);
+  color: $eh-cream;
 }
 
 
@@ -520,11 +542,11 @@ About
   height: auto;
   clear: both;
   display: table;
-  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */ 
   background-size: 150% 100%;
   color: white;
   padding-top: 5%;
@@ -534,7 +556,7 @@ About
 
 #aboutSection {
   width: 50%;
-  min-width: 200px;
+  min-width: 250px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -551,7 +573,6 @@ About
 
 #aboutDescription {
   margin: 0 auto;
-  /*width: 65%;*/
   font-size: 18pt;
   text-align: justify;
 }
@@ -565,7 +586,7 @@ Skills
   padding-top: 5%;
   padding-bottom: 5%;
   display: table;
-  background-color: rgba(245,245,245,1);
+  background-color: $eh-cream;
   position: relative;
 }
 
@@ -604,7 +625,7 @@ Contact
   padding-top: 5%;
   padding-bottom: 5%;
   display: table;
-  background-color: rgba(245,245,245,1);
+  background-color: $eh-cream;
   /*background-color: rgba(65,65,65,1);*/
 }
 
