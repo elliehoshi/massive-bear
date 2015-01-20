@@ -3,89 +3,189 @@
     {
       "piece_name": "peek",
       "title" : "Peek",
+      "slug" : "portfolio/peek",
       "category" : "Web App",
-      "description": "Speed read NPR stories through Peek.",
-      "image" : {
-        "url" : "peek1.jpg",
-        "alt" : "lorem ipsum"
-      },
+      "description": "Speed read NPR stories through Peek. Built using the NPR API, Peek aims to be the next evolution for delivering news content to anyone and everyone. Double-click an article to add to a list of stories you want to read that shows up in the column to the right. When you hover your mouse over the story on the right, click “Read”, and then it will bring you to a page where you can “Play” the story and it will play the words on the screen based on the Words Per Minute setting.",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/1-thumbnail-peek.jpg",
+          "alt" : "Peek's main interface"
+        },
+        {
+          "url" : "peek1.jpg",
+          "alt" : "Peek's main interface"
+        },
+        {
+          "url" : "peek-2.png",
+          "alt" : "Peek"
+        }
+      ],
       "tools" : "<li>MongoDB</li><li>Express.js</li><li>Angular.js</li><li>Node.js</li><li>JavaScript</li><li>jQuery</li>"
     },
     {
       "piece_name": "stylelust",
       "title" : "StyleLust",
+      "slug" : "portfolio/stylelust",
       "category" : "eCommerce Web App",
       "description": "Discover new fashion styles and trends from the hottest brands. Buy your favorite items from hundreds of brands in one location.",
-      "image" : {
-        "url" : "StyleLust1.jpg",
-        "alt" : "lorem ipsum"
-      },
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/2-thumbnail-stylelust.jpg",
+          "alt" : "StyleLust's homepage"
+        },
+        {
+          "url" : "StyleLust1.jpg",
+          "alt" : "StyleLust's homepage"
+        }
+      ],
       "tools" : "<li>Ruby on Rails</li><li>PostgreSQL</li><li>JavaScript</li><li>jQuery</li><li>Zurb Foundation</li>"
     },
     {
       "piece_name": "pillstagram",
       "title" : "Pillstagram",
+      "slug" : "portfolio/pillstagram",
       "category" : "UX Deck for Mobile Medical App",
       "description": "Snap a photo of your medications with your phone. Automatically identify and organize your medications in seconds.",
-      "image" : {
-        "url" : "Pillstagram1.png",
-        "alt" : "lorem ipsum"
-      },
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/3-thumbnail-pillstagram.jpg",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "Pillstagram1.png",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "pillstagram2.png",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "pillstagram3.png",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "pillstagram4.png",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "pillstagram5.png",
+          "alt" : "Pillstagram"
+        },
+        {
+          "url" : "pillstagram6.png",
+          "alt" : "Pillstagram"
+        }
+      ],
       "tools" : "<li>Axure</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li><li>Adobe InDesign</li>"
     },
     {
       "piece_name": "muselab",
       "title" : "MuseLab",
+      "slug" : "portfolio/muselab",
       "category" : "Web App",
-      "description": "Where user needs inspire creators.",
-      "image" : {
-        "url" : "muselab.png",
-        "alt" : "lorem ipsum"
-      },
+      "description": "Users always have needs for apps, websites and services that don't exist yet. Developers and creators always have a need to get inspiration from users. Introducing MuseLab - the first platform where user needs inspire creators.",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/4-thumbnail-muselab.jpg",
+          "alt" : "MuseLab"
+        },
+        {
+          "url" : "muselab.png",
+          "alt" : "MuseLab"
+        },
+        {
+          "url" : "muselab-2.png",
+          "alt" : "MuseLab"
+        },
+        {
+          "url" : "muselab-3.png",
+          "alt" : "MuseLab"
+        },
+        {
+          "url" : "muselab-4.png",
+          "alt" : "MuseLab"
+        },
+        {
+          "url" : "muselab-5.png",
+          "alt" : "MuseLab"
+        }
+      ],
       "tools" : "<li>MongoDB</li><li>Ruby on Rails</li><li>D3.js</li><li>JavaScript</li>"
     },
     {
       "piece_name": "inbetween",
       "title" : "inBetween",
+      "slug" : "portfolio/inbetween",
       "category" : "Mobile App",
-      "description": "proj5",
-      "image" : {
-        "url" : "inBetween.png",
-        "alt" : "lorem ipsum"
-      },
-      "tools" : "<li>Ruby on Rails</li><li>PostgreSQL</li><li>JavaScript</li>"
+      "description": "More info coming soon",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/5-thumbnail-inbetween.jpg",
+          "alt" : "inBetween"
+        },
+        {
+          "url" : "inBetween.png",
+          "alt" : "inBetween"
+        }
+      ],
+      "tools" : "<li>PhotoShop</li><li>Illustrator</li><li>Balsamiq</li>"
     },
     {
-      "piece_name": "goldghoststudio",
+      "piece_name": "goldghost",
       "title" : "Gold Ghost Studio",
+      "slug" : "portfolio/goldghost",
       "category" : "UX Deck for eCommerce App",
       "description": "Hand Silkscreened Prints from LA Designers.",
-      "image" : {
-        "url" : "GoldGhost.jpg",
-        "alt" : "lorem ipsum"
-      },
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/6-thumbnail-goldghoststudio.jpg",
+          "alt" : "Gold Ghost Studio"
+        },
+        {
+          "url" : "GoldGhostSquare.jpg",
+          "alt" : "Gold Ghost Studio"
+        },
+        {
+          "url" : "GoldGhostExperienceMap.jpg",
+          "alt" : "Gold Ghost Studio"
+        }
+      ],
       "tools" : "<li>Balsamiq</li><li>Omnigraffle</li><li>Adobe InDesign</li><li>Adobe Photoshop</li>"
     },
     {
       "piece_name": "geospec",
       "title" : "Geometric Speciation",
+      "slug" : "portfolio/geospec",
       "category" : "3D Data Visualization",
       "description": "An exploration of translations between existing drawings and their re-constructed digital and physical equivalents.",
-      "image" : {
-        "url" : "GeoSpec.jpg",
-        "alt" : "lorem ipsum"
-      },
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/7-thumbnail-geospec.jpg",
+          "alt" : "Geometric Speciation"
+        },
+        {
+          "url" : "GeoSpec.jpg",
+          "alt" : "Geometric Speciation"
+        }
+      ],
       "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
     },
     {
-      "piece_name": "fractalhouse",
+      "piece_name": "house",
       "title" : "Fractal House",
-      "category" : "eCommerce Web App",
-      "description": "proj8",
-      "image" : {
-        "url" : "houseicon.gif",
-        "alt" : "lorem ipsum"
-      },
+      "slug" : "portfolio/house",
+      "category" : "3D Data Visualization",
+      "description": "More info coming soon",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/8-thumbnail-house.jpg",
+          "alt" : "Fractal House"
+        },
+        {
+          "url" : "houseicon.gif",
+          "alt" : "Fractal House"
+        }
+      ],
       "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
     }
   ]

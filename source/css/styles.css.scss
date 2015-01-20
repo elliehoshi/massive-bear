@@ -20,6 +20,10 @@ html, body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-weight: 100;
+}
+
 a {
   text-decoration: none;
   color: $eh-gray;
@@ -38,7 +42,7 @@ a:hover {
 
 .btn-default {
   background-color: $eh-blue;
-  color: white;
+  color: $eh-cream;
   border: none;
   width: 150px;
   height: 50px;
@@ -146,11 +150,40 @@ nav li a {
 
 .anchor-nav {
   text-align: left;
+  position: fixed;
+  // width: 100%;
+  top: 5px;
+  left: 3px;
+  z-index: 10;
+  display: block;
   img {
     height: 40px;
     width: 40px;
   }
+}
 
+
+.anchor-nav-bg.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.anchor-nav-bg {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  text-align: left;
+  width: 100%;
+  min-width: 100vw;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:  $eh-cream;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /*-----------------------------------------
@@ -280,7 +313,6 @@ Home
 }
 
 #blackBackdrop {
-  // background-image: url(../img/subtle_carbon.png);
   background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
   background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
   background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
@@ -361,7 +393,7 @@ Home
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 1.5em;
-  color: white;
+  color: $eh-cream;
 }
 
 #introName img {
@@ -440,11 +472,10 @@ Portfolio
   margin: 0 auto;
   display: inline-block;
   font-size: 19pt;
-}
-
-.overlay img {
-  width: 100%;
-  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .overlay:after {
@@ -462,7 +493,7 @@ Portfolio
   opacity: 1;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  content: attr(data-content);
+  content: attr(data);
   @media only screen and (min-width: 0px) and (max-width: 768px) {
     font-size: 1em;
   }
@@ -499,13 +530,13 @@ Portfolio Pages
   &.inbetween {
     background-image: url(../img/inBetween.png);
   }
-  &.goldghoststudio {
+  &.goldghost {
     background-image: url(../img/GoldGhost.jpg);
   }
   &.geospec {
     background-image: url(../img/GeoSpec.jpg);
   }
-  &.fractalhouse {
+  &.house {
     background-image: url(../img/houseicon.gif);
   }
 }
@@ -519,7 +550,7 @@ Portfolio Pages
   background-color: rgba(40, 49, 72, 0.9);
   content: '';
   .header-title {
-    color: white;
+    color: $eh-cream;
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -533,8 +564,9 @@ Portfolio Pages
 }
 
 .portfolio-full-image {
-  width: 80%;
+  width: 60%;
   height: auto;
+  margin-bottom: 50px;
 }
 
 /*-----------------------------------------
@@ -551,7 +583,7 @@ About
   background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */ 
   background-size: 150% 100%;
-  color: white;
+  color: $eh-cream;
   padding-top: 5%;
   -webkit-animation: animateGradient 3s alternate infinite;
   animation: animateGradient 3s alternate infinite;
@@ -574,10 +606,16 @@ About
   overflow: hidden;
 }
 
-#aboutDescription {
+.aboutDescription {
   margin: 0 auto;
+  margin-bottom: 20px;
   font-size: 18pt;
   text-align: justify;
+  line-height: 28pt;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    font-size: 14pt;
+  }
 }
 
 /*-----------------------------------------
@@ -664,31 +702,48 @@ Contact
 
 .social-container {
   text-align: right;
+  a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+  }
 }
 
 .social-icons {
   display: inline-block;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  &:hover {
+    opacity: 0.6;
+  }
 }
 
-.twitter {
+.tumblr {
   background: url(../img/portfolio-spritesheet.png) no-repeat 0 0;
   width: 36px;
   height: 36px;
-  background-size: 300% 100%;
+  background-size: 400% 100%;
 }
 
 .linkedin {
-  background: url(../img/portfolio-spritesheet.png) no-repeat 50% 0;
+  background: url(../img/portfolio-spritesheet.png) no-repeat 33% 0;
   width: 36px;
   height: 36px;
-  background-size: 300% 100%;
+  background-size: 400% 100%;
 }
 
 .github {
+  background: url(../img/portfolio-spritesheet.png) no-repeat 67% 0;
+  width: 36px;
+  height: 36px;
+  background-size: 400% 100%;
+}
+
+.twitter {
   background: url(../img/portfolio-spritesheet.png) no-repeat 100% 0;
   width: 36px;
   height: 36px;
-  background-size: 300% 100%;
+  background-size: 400% 100%;
 }
 
 /*-----------------------------------------
@@ -710,6 +765,11 @@ footer {
   font-weight: 100;
   padding: 10px;
   width: 100%;
+}
+
+.anchor-footer {
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /*-----------------------------------------

@@ -19,7 +19,25 @@ $(document).ready(function() {
       }, 500);
     }
     if($(window).scrollTop() < scrollTop){
-      $('#nav-container').removeAttr('style');  
+      $('#nav-container').removeAttr('style');
+    }
+  })
+
+  // Affix anchor nav
+  $(window).scroll(function(){
+    var scrollTop = $('.portfolio-description').height();
+    if($(window).scrollTop() >= scrollTop){
+      $('.anchor-nav-bg').css({
+        visibility: 'visible',
+        position: 'fixed',
+        top: '0'
+      });
+      $('.anchor-nav-bg').animate({
+        opacity: '1'
+      }, 500);
+    }
+    if($(window).scrollTop() < scrollTop){
+      $('.anchor-nav-bg').removeAttr('style');
     }
   })
 

@@ -4,9 +4,7 @@ title: Ellie Hoshizaki | Web Developer & Designer
 
 <!-- new content -->
   <div class="home">
-
     <div id="blackBackdrop" onload="fadeIn(this)">
-
       <div class="bounceIn" id="introText">  
         <div id="introName">
           <img src="img/titletext.svg"/>
@@ -14,16 +12,13 @@ title: Ellie Hoshizaki | Web Developer & Designer
         </div>     
         <a href="#services"><img src="img/scroll-icon.svg" id="scroll"></img></a>
       </div>
-
       <div id="landing-content">
       </div>
       <div id="movement2">
       </div>
       <div id="movement3">
       </div>
-
     </div>
-
   </div>
 
   <!-- Navbar -->
@@ -67,54 +62,9 @@ title: Ellie Hoshizaki | Web Developer & Designer
 
 
   <div id="works">
-
-      <a href='/portfolio/peek'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="Peek">
-          <img src="img/peek1.jpg" class="large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='/portfolio/stylelust'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="StyleLust">
-          <img src="img/StyleLust1.jpg" class="large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='/portfolio/pillstagram'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="Pillstagram">
-          <img src="img/Pillstagram1.png" class="large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-      
-      <a href='portfolio/muselab'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="MuseLab">
-          <img src="img/muselab.png" class=" large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='portfolio/inbetween'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="inBetween">
-          <img src="img/inBetween.png" class=" large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='portfolio/goldghoststudio'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="Gold Ghost">
-          <img src="img/GoldGhostSquare.jpg" class="large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='portfolio/geospec'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="GeoSpec">
-          <img src="img/GeoSpec.jpg" class=" large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
-
-      <a href='portfolio/fractalhouse'>
-        <div class="overlay large-quarters medium-quarters small-half mobile-half" data-content="House">
-          <img src="img/houseicon.gif" class=" large-quarters medium-quarters small-half mobile-half"/>
-        </div>
-      </a>
+    <% data.portfolio.pieces.each do |piece| %>
+      <%= link_to image_tag(piece.images[0].url), piece.slug, :class=> "overlay large-quarters medium-quarters small-half mobile-half", :data => piece.piece_name.capitalize %>
+    <% end %>
   </div>
 
   <div id="skills">
@@ -168,13 +118,18 @@ title: Ellie Hoshizaki | Web Developer & Designer
     <span class="title">about me</span>
     <div class="spacer"></div>
     <div id="aboutSection">
-      <div id="aboutDescription">
+      <p class="aboutDescription">
         Hi!
-        <br><br>
-        I'm Ellie, a UX/UI designer and front end web developer with a BA in Architecture from UCLA.
-        <br><br>
-        I build clean code to create interactive and intuitive designs with the end user always in mind.
-      </div>
+      </p>
+      <p class="aboutDescription">
+        I'm Ellie, a UX/UI designer and front end web developer with a BA in Architectural Design from UCLA. I build clean code to create interactive and intuitive designs with the end user always in mind.
+      </p>
+      <p class="aboutDescription">
+        Need some wireframes and prototypes? No problem. Need high fidelity user interface design? Awesome. Need some clean code to build a great web app? Let's do it!
+      </p>
+      <p class="aboutDescription">
+        I love diving into projects' UX, UI and code to create memorable experiences for users and clients. If you need a UX engineer, UI designer, or developer (or all three in one person), I'll be happy to help.
+      </p>
     </div>
 
 
@@ -207,18 +162,23 @@ title: Ellie Hoshizaki | Web Developer & Designer
       <div class="social-container mobile-whole small-thirds medium-thirds large-thirds">
         Connect
         <br>
-        <a href="http://www.linkedin.com/in/elliehoshizaki" target="_blank">
-          <div class="social-icons linkedin">
-          </div>
-        </a>
-        <a href="https://github.com/elliehoshi" target="_blank">
-          <div class="social-icons github">
-          </div>
-        </a>
-        <a href="https://twitter.com/ehoshizaki" target="_blank">
-          <div class="social-icons twitter">
-          </div>
-        </a>
+        
+        <div class="social-icons tumblr">
+          <a href="http://www.elliehoshizaki.tumblr.com" target="_blank"></a>
+        </div>
+        
+        <div class="social-icons linkedin">
+          <a href="http://www.linkedin.com/in/elliehoshizaki" target="_blank"></a>
+        </div>
+
+        <div class="social-icons github">
+          <a href="https://github.com/elliehoshi" target="_blank"></a>
+        </div>
+
+        <div class="social-icons twitter">
+          <a href="https://twitter.com/ehoshizaki" target="_blank"></a>
+        </div>
+
       </div>
 
     </div>

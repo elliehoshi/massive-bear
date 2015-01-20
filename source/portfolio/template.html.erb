@@ -2,13 +2,11 @@
 title: Ellie Hoshizaki | Web Developer & Designer
 ---
 
-<%= partial "anchor-nav" %>
-
 <div class="portfolio-header <%= piece_name%>">
-
+<%= partial "anchor-nav" %>
   <div class="header-overlay">
     <div class="header-title">
-      <h1><%= piece.title %> - Full Content Coming Soon</h1>
+      <h1><%= piece.title %></h1>
 
       <p><%= piece.category %></p>
     </div>
@@ -27,4 +25,11 @@ title: Ellie Hoshizaki | Web Developer & Designer
   </ul>
 </div>
 
-<%= image_tag "#{piece.image.url}", :class => "portfolio-full-image"%>
+<% piece.images.each_with_index do |image, index| %>
+  <% if index > 0 %>
+    <%= image_tag "#{image.url}", :class => "portfolio-full-image"%>
+  <% end %>
+<% end %>
+
+
+<%= partial "anchor-footer" %>
