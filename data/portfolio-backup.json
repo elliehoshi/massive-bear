@@ -1,0 +1,22 @@
+{
+  "pieces": [
+    {
+      "piece_name": "house",
+      "title" : "Fractal House",
+      "slug" : "portfolio/house",
+      "category" : "3D Data Visualization",
+      "description": "More info coming soon",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/8-thumbnail-house.jpg",
+          "alt" : "Fractal House"
+        },
+        {
+          "url" : "houseicon.gif",
+          "alt" : "Fractal House"
+        }
+      ],
+      "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
+    }
+  ]
+}

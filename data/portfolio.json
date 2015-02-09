@@ -1,6 +1,24 @@
 {
   "pieces": [
     {
+      "piece_name": "mediahound",
+      "title" : "MediaHound",
+      "slug" : "portfolio/mediahound",
+      "category" : "Web & iOS App",
+      "description": "MediaHound offers an online platform for users to search, discover, compare, and share film and television content.",
+      "images" : [
+        {
+          "url" : "portfolio-thumbnails/9-thumbnail-mediahound.jpg",
+          "alt" : "MediaHound homepage"
+        },
+        {
+          "url" : "mediahound-portfolio-1.jpg",
+          "alt" : "Peek's main interface"
+        }
+      ],
+      "tools" : "<li>Angular.js</li><li>Famo.us</li><li>JavaScript</li><li>Require.js</li>"
+    },
+    {
       "piece_name": "peek",
       "title" : "Peek",
       "slug" : "portfolio/peek",
@@ -166,24 +184,6 @@
         {
           "url" : "GeoSpec.jpg",
           "alt" : "Geometric Speciation"
-        }
-      ],
-      "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"
-    },
-    {
-      "piece_name": "house",
-      "title" : "Fractal House",
-      "slug" : "portfolio/house",
-      "category" : "3D Data Visualization",
-      "description": "More info coming soon",
-      "images" : [
-        {
-          "url" : "portfolio-thumbnails/8-thumbnail-house.jpg",
-          "alt" : "Fractal House"
-        },
-        {
-          "url" : "houseicon.gif",
-          "alt" : "Fractal House"
         }
       ],
       "tools" : "<li>Rhinoceros 3D</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>"

@@ -54,8 +54,8 @@ $(document).ready(function() {
   $('#blackBackdrop').mousemove(function(e){
     var amountMovedX = (e.pageX * 1 / 4);
     var amountMovedY = (e.pageY * 1 / 4);
-    $('#movement2').css('left', amountMovedX * 2);
-    $('#movement2').css('top', amountMovedY * 2);
+    $('#movement2').css('right', amountMovedX);
+    $('#movement2').css('top', amountMovedY);
     $('#movement3').css('left', amountMovedX);
     $('#movement3').css('top', amountMovedY);
   });

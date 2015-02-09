@@ -189,6 +189,7 @@ nav li a {
 /*-----------------------------------------
 Animations
 -----------------------------------------*/
+
 @-webkit-keyframes bounceIn {
   0% {
     opacity: 0;
@@ -301,6 +302,37 @@ Animations
   -webkit-animation-duration: 1.6s;
   visibility: visible !important;
 }
+
+.fade-in {
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+       -moz-animation: fadein 1.5s; /* Firefox */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
 
 /*-----------------------------------------
 Home
@@ -515,6 +547,9 @@ Portfolio Pages
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
+  &.mediahound {
+    background-image: url(../img/mediahound-portfolio-1.jpg);
+  }
   &.peek {
     background-image: url(../img/peek1.jpg);
   }
