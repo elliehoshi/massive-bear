@@ -6,6 +6,25 @@ $eh-blue: rgba(162, 213, 213, 1);
 $eh-cream: rgba(245,245,245,1);
 
 /*-----------------------------------------
+Mixins
+-----------------------------------------*/
+@mixin eh-bg-gradient {
+  background: -webkit-linear-gradient(150deg, #283048, #859398); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(150deg, #283048, #859398); /* FF3.6+ */
+  background:     -ms-linear-gradient(150deg, #283048, #859398); /* IE10 */
+  background:      -o-linear-gradient(150deg, #283048, #859398); /* Opera 11.10+ */
+  background:         linear-gradient(150deg, #283048, #859398); /* W3C */ 
+  background-size: 400% 400%;
+}
+
+@mixin eh-animate-gradient {
+  -webkit-animation: animateGradient 16s ease infinite;
+  -moz-animation: animateGradient 16s ease infinite;
+  -o-animation: animateGradient 16s ease infinite;
+  animation: animateGradient 16s ease infinite;
+}
+
+/*-----------------------------------------
 Body
 -----------------------------------------*/
 * {
@@ -333,6 +352,30 @@ Animations
     to   { opacity: 1; }
 }​
 
+.animateClass {
+
+}
+
+@-webkit-keyframes animateGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes animateGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes animateGradient {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes animateGradient { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
 
 /*-----------------------------------------
 Home
@@ -345,11 +388,7 @@ Home
 }
 
 #blackBackdrop {
-  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */
+  @include eh-bg-gradient;
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -612,16 +651,10 @@ About
   height: auto;
   clear: both;
   display: table;
-  background: -webkit-linear-gradient(90deg, #283048 10%, #859398 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #283048 10%, #859398 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #283048 10%, #859398 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #283048 10%, #859398 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #283048 10%, #859398 90%); /* W3C */ 
-  background-size: 150% 100%;
   color: $eh-cream;
   padding-top: 5%;
-  -webkit-animation: animateGradient 3s alternate infinite;
-  animation: animateGradient 3s alternate infinite;
+  @include eh-bg-gradient;
+  @include eh-animate-gradient;
 }
 
 #aboutSection {
@@ -703,28 +736,6 @@ Contact
   display: table;
   background-color: $eh-cream;
 }
-
-
-@keyframes animateGradient {
-  0%{
-    background-position: 0%;
-  }
-  
-  100%{
-    background-position: 100%;
-  }
-}
-
-@-webkit-keyframes animateGradient {
-    0%{
-    background-position: 0%;
-  }
-  
-  100%{
-    background-position: 100%;
-  }
-}
-/*end*/
 
 #contactContainer {
   width: 80%;
