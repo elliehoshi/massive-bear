@@ -692,22 +692,16 @@ Skills
 #skills {
   width: 100%;
   height: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 10%;
   display: table;
   background-color: $eh-cream;
   position: relative;
 }
 
-#skillSection {
-  width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .skillTitle {
   text-align: left;
   padding-left: 15px;
+  height: 230px; //ADJUST IF LIST ITEMS CHANGE AND THEN CHECK MOBILE
   h6 {
     margin-bottom: 0px;
   }
@@ -811,6 +805,9 @@ footer {
   font-weight: 100;
   padding: 10px;
   width: 100%;
+  h6 {
+    margin-left: 10px; 
+  }
 }
 
 .anchor-footer {

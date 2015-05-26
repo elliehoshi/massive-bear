@@ -36,6 +36,14 @@
         {
           "url" : "peek-2.png",
           "alt" : "Peek"
+        },
+        {
+          "url" : "peek-3d-heart-home3.png",
+          "alt" : "Peek"
+        },
+        {
+          "url" : "peek-3d-heart-mockup-demo.gif",
+          "alt" : "Peek"
         }
       ],
       "tools" : "<li>MongoDB</li><li>Express.js</li><li>Angular.js</li><li>Node.js</li><li>JavaScript</li><li>jQuery</li>"
